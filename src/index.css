@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-200; }
+  body { @apply m-0 bg-canvas font-sans text-slate-800 antialiased; font-family: 'DM Sans', sans-serif; }
+  button, a, input, select, textarea { @apply outline-none; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+}
+
+@layer components {
+  .page-title { @apply text-2xl font-extrabold tracking-tight text-slate-950 sm:text-3xl; }
+  .page-subtitle { @apply mt-1 text-sm text-slate-500; }
+  .panel { @apply rounded-2xl border border-slate-200 bg-white shadow-soft; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-success { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-emerald-700 disabled:opacity-60; }
+  .btn-danger { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-red-50 px-3 py-2 text-sm font-bold text-red-600 transition hover:bg-red-600 hover:text-white; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-600 transition hover:bg-slate-50; }
+  .field { @apply flex flex-col gap-1.5 text-sm font-semibold text-slate-700; }
+  .field input, .field select, .field textarea { @apply w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 font-normal text-slate-900 transition placeholder:text-slate-400 focus:border-blue-400 focus:ring-4 focus:ring-blue-50; }
+  .table-wrap { @apply overflow-x-auto; }
+  .data-table { @apply w-full min-w-[700px] text-left text-sm; }
+  .data-table th { @apply bg-slate-50 px-5 py-3 text-xs font-bold uppercase tracking-wider text-slate-500; }
+  .data-table td { @apply border-t border-slate-100 px-5 py-4 text-slate-600; }
+  .data-table tbody tr { @apply transition hover:bg-slate-50/70; }
+}
