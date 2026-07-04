@@ -8,4 +8,4 @@ Interface React/Vite do PlanFit.
 2. Execute `npm install`.
 3. Execute `npm run dev`.
 
-Por omissão, o frontend abre em `http://localhost:5173` e liga-se à API em `http://localhost:5000/api`.
+Por omissão, o frontend abre em `http://localhost:5173` `https://api-planfit-production.up.railway.app/api`.
